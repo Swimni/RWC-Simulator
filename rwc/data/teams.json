@@ -1,0 +1,31 @@
+{
+	"Nouvelle Zelande": {"elo": 2080, "home_bonus": 0},
+	"Australie": {"elo": 2050, "home_bonus": 0},
+	"Chili": {"elo": 1650, "home_bonus": 0},
+	"Hong Kong": {"elo": 1550, "home_bonus": 0},
+
+	"Afrique du Sud": {"elo": 2060, "home_bonus": 0},
+	"Italie": {"elo": 1820, "home_bonus": 0},
+	"Georgie": {"elo": 1790, "home_bonus": 0},
+	"Roumanie": {"elo": 1650, "home_bonus": 0},
+
+	"Argentina": {"elo": 1910, "home_bonus": 0},
+	"Fiji": {"elo": 1880, "home_bonus": 0},
+	"Spain": {"elo": 1680, "home_bonus": 0},
+	"Canada": {"elo": 1700, "home_bonus": 0},
+
+	"Irlande": {"elo": 2030, "home_bonus": 0},
+	"Ecosse": {"elo": 1920, "home_bonus": 0},
+	"Uruguay": {"elo": 1750, "home_bonus": 0},
+	"Portugal": {"elo": 1680, "home_bonus": 0},
+
+	"France": {"elo": 2000, "home_bonus": 0},
+	"Japon": {"elo": 1850, "home_bonus": 0},
+	"Etats Unis": {"elo": 1720, "home_bonus": 0},
+	"Samoa": {"elo": 1770, "home_bonus": 0},
+
+	"Angleterre": {"elo": 1980, "home_bonus": 0},
+	"Pays de Galles": {"elo": 1800, "home_bonus": 0},
+	"Tonga": {"elo": 1760, "home_bonus": 0},
+	"Zimbabwe": {"elo": 1550, "home_bonus": 0}
+}
