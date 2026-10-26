@@ -1,17 +1,3 @@
-# def generer_huitiemes(premiers, deuxiemes, troisiemes):
-# 	troisiemes = sorted(troisiemes, key=lambda x: x["points"], reverse=True)[:4]
-
-# 	return [
-# 		(premiers["A"], troisiemes[3]["team"]),
-# 		(premiers["B"], troisiemes[2]["team"]),
-# 		(premiers["C"], troisiemes[1]["team"]),
-# 		(premiers["D"], troisiemes[0]["team"]),
-# 		(premiers["E"], deuxiemes["D"]),
-# 		(premiers["F"], deuxiemes["B"]),
-# 		(deuxiemes["A"], deuxiemes["E"]),
-# 		(deuxiemes["F"], deuxiemes["C"]),
-# 	]
-
 from simulation.matches import simuler_match
 
 def generer_huitiemes(premiers, deuxiemes, troisiemes):
@@ -43,12 +29,12 @@ def simuler_tour(matchs, teams, tour="Tour"):
 # ----------------------
 # Quarts de finale
 # ----------------------
-def generer_quarts(huitiemes, teams):
+def generer_quarts(gagnants_huitiemes, teams):
     quarts = [
-        (huitiemes[0][0], huitiemes[1][0]),  # gagnants match1 vs match2
-        (huitiemes[7][0], huitiemes[4][0]),  # gagnants match8 vs match5
-        (huitiemes[6][0], huitiemes[5][0]),  # gagnants match7 vs match6
-        (huitiemes[2][0], huitiemes[3][0]),  # gagnants match3 vs match4
+        (gagnants_huitiemes[0], gagnants_huitiemes[1]),  # gagnants match1 vs match2
+        (gagnants_huitiemes[7], gagnants_huitiemes[4]),  # gagnants match8 vs match5
+        (gagnants_huitiemes[6], gagnants_huitiemes[5]),  # gagnants match7 vs match6
+        (gagnants_huitiemes[2], gagnants_huitiemes[3]),  # gagnants match3 vs match4
     ]
     return simuler_tour(quarts, teams, tour="Quarts de finale")
 

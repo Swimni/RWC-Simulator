@@ -27,7 +27,8 @@ def simuler_poule(nom_poule, poule, teams):
 				f"(p={prob:.2f}, bonus={bonus})"
 			)
 
-			afficher_classement(scores)
+	print("\nClassement :")
+	afficher_classement(scores)
 
 	classement = sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
