@@ -1,6 +1,7 @@
 import json
 from simulation.pools import simuler_poule
 from simulation.knockouts import (
+    simuler_tour,
     generer_huitiemes,
     generer_quarts,
     generer_demies,
@@ -37,12 +38,10 @@ def main():
 
     # Huitièmes de finale
     huitiemes = generer_huitiemes(premiers, deuxiemes, troisiemes)
-    print("\n🏉 Huitièmes de finale :\n")
-    for i, (a, b) in enumerate(huitiemes, 1):
-        print(f"Match {i} : {a} vs {b}")
+    gagnants_huitiemes = simuler_tour(huitiemes, teams, tour="Huitièmes de finale")
 
     # Quarts de finale
-    gagnants_quarts = generer_quarts(huitiemes, teams)
+    gagnants_quarts = generer_quarts(gagnants_huitiemes, teams)
 
     # Demi-finales
     gagnants_demies = generer_demies(gagnants_quarts, teams)
